@@ -1,3 +1,14 @@
-window.addEventListener('load', () => { document.getElementById('loader').style.display = 'none'; });
-const form = document.getElementById('contactForm');
-form.addEventListener('submit', e => { e.preventDefault(); form.querySelector('.success').style.display = 'block'; form.reset(); });
+// Loading Screen
+window.addEventListener("load", () => {
+    setTimeout(() => {
+        document.getElementById("loader").style.display = "none";
+    }, 800);
+});
+
+// Mobile Menu
+const menuIcon = document.getElementById("menuIcon");
+const navMenu = document.getElementById("navMenu");
+
+menuIcon.addEventListener("click", () => {
+    navMenu.classList.toggle("show");
+});
