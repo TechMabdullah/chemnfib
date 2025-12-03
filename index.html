@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CHEMNFIBER Products</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Loader -->
+  <div id="loader"><div class="spinner"></div></div>
+
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="logo"><h2>CHEMNFIBER</h2></div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Welcome to CHEMNFIBER</h1>
+    <p>High-quality products for industrial and commercial use. Explore our collection below.</p>
+    <button onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">View Products</button>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>CHEMNFIBER specializes in masterbatch and other high-quality chemical products. Our commitment is to provide solutions that enhance efficiency and quality in your production processes.</p>
+  </section>
+
+  <!-- Products -->
+  <section id="products">
+    <h2>Our Products</h2>
+    <div class="product-list">
+      <div class="product-card">
+        <img src="images/product1.jpg" alt="Product 1">
+        <div class="info">
+          <h3>Product 1</h3>
+          <p>High-quality masterbatch for industrial use.</p>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="images/product2.jpg" alt="Product 2">
+        <div class="info">
+          <h3>Product 2</h3>
+          <p>Eco-friendly additive for improved performance.</p>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="images/product3.jpg" alt="Product 3">
+        <div class="info">
+          <h3>Product 3</h3>
+          <p>Custom solution tailored to your requirements.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-container">
+      <div class="contact-form">
+        <form id="contactForm">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+          <p class="success" style="color:green; display:none;">Thank you! Your message has been sent.</p>
+        </form>
+      </div>
+      <div class="contact-info">
+        <p><strong>Email:</strong> <a href="mailto:info@chemnfiber.com">info@chemnfiber.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+1234567890">+1 234 567 890</a></p>
+        <p><strong>Address:</strong> 123 Main Street, City, Country</p>
+        <iframe src="https://maps.google.com/maps?q=123 Main Street, City, Country&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>&copy; 2025 CHEMNFIBER. All rights reserved.</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
